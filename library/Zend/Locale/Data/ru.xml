@@ -12,9 +12,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
-			<localePattern>{0} ({1})</localePattern>
-			<localeSeparator>{0}, {1}</localeSeparator>
-			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+			<localePattern>%s ({1})</localePattern>
+			<localeSeparator>%s, {1}</localeSeparator>
+			<localeKeyTypePattern>%s: {1}</localeKeyTypePattern>
 		</localeDisplayPattern>
 		<languages>
 			<language type="aa">афар</language>
@@ -1183,9 +1183,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<measurementSystemName type="US">Англо-американская</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
-			<codePattern type="language">Язык: {0}</codePattern>
-			<codePattern type="script">Написание: {0}</codePattern>
-			<codePattern type="territory">Регион: {0}</codePattern>
+			<codePattern type="language">Язык: %s</codePattern>
+			<codePattern type="script">Написание: %s</codePattern>
+			<codePattern type="territory">Регион: %s</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
 	<contextTransforms>
@@ -1239,12 +1239,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<exemplarCharacters type="auxiliary">[{а\u0301} {е\u0301} {и\u0301} {о\u0301} {у\u0301} {ы\u0301} {э\u0301} {ю\u0301} {я\u0301}]</exemplarCharacters>
 		<exemplarCharacters type="index">[А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ы Э Ю Я]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
-		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
-		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
-		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
-		<ellipsis type="word-final" draft="contributed">{0} …</ellipsis>
-		<ellipsis type="word-initial" draft="contributed">… {0}</ellipsis>
-		<ellipsis type="word-medial" draft="contributed">{0} … {1}</ellipsis>
+		<ellipsis type="final" draft="contributed">%s…</ellipsis>
+		<ellipsis type="initial" draft="contributed">…%s</ellipsis>
+		<ellipsis type="medial" draft="contributed">%s…{1}</ellipsis>
+		<ellipsis type="word-final" draft="contributed">%s …</ellipsis>
+		<ellipsis type="word-initial" draft="contributed">… %s</ellipsis>
+		<ellipsis type="word-medial" draft="contributed">%s … {1}</ellipsis>
 		<moreInformation draft="contributed">?</moreInformation>
 	</characters>
 	<delimiters>
@@ -1575,22 +1575,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<dateTimeFormats>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="long">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="medium">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="short">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
@@ -1627,7 +1627,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yyyyQQQQ">QQQQ y 'г'. G</dateFormatItem>
 					</availableFormats>
 					<intervalFormats>
-						<intervalFormatFallback draft="contributed">{0} - {1}</intervalFormatFallback>
+						<intervalFormatFallback draft="contributed">%s - {1}</intervalFormatFallback>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d-d</greatestDifference>
 						</intervalFormatItem>
@@ -2015,22 +2015,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<dateTimeFormats>
 					<dateTimeFormatLength type="full">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="long">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="medium">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<dateTimeFormatLength type="short">
 						<dateTimeFormat>
-							<pattern>{1}, {0}</pattern>
+							<pattern>{1}, %s</pattern>
 						</dateTimeFormat>
 					</dateTimeFormatLength>
 					<availableFormats>
@@ -2073,10 +2073,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yQQQQ">QQQQ y 'г'.</dateFormatItem>
 					</availableFormats>
 					<appendItems>
-						<appendItem request="Timezone">{0} {1}</appendItem>
+						<appendItem request="Timezone">%s {1}</appendItem>
 					</appendItems>
 					<intervalFormats>
-						<intervalFormatFallback draft="contributed">{0} - {1}</intervalFormatFallback>
+						<intervalFormatFallback draft="contributed">%s - {1}</intervalFormatFallback>
 						<intervalFormatItem id="d">
 							<greatestDifference id="d">d-d</greatestDifference>
 						</intervalFormatItem>
@@ -2743,16 +2743,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">в этому году</relative>
 				<relative type="1">в следующем году</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Через {0} год</relativeTimePattern>
-					<relativeTimePattern count="few">Через {0} года</relativeTimePattern>
-					<relativeTimePattern count="many">Через {0} лет</relativeTimePattern>
-					<relativeTimePattern count="other">Через {0} года</relativeTimePattern>
+					<relativeTimePattern count="one">Через %s год</relativeTimePattern>
+					<relativeTimePattern count="few">Через %s года</relativeTimePattern>
+					<relativeTimePattern count="many">Через %s лет</relativeTimePattern>
+					<relativeTimePattern count="other">Через %s года</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} год назад</relativeTimePattern>
-					<relativeTimePattern count="few">{0} года назад</relativeTimePattern>
-					<relativeTimePattern count="many">{0} лет назад</relativeTimePattern>
-					<relativeTimePattern count="other">{0} года назад</relativeTimePattern>
+					<relativeTimePattern count="one">%s год назад</relativeTimePattern>
+					<relativeTimePattern count="few">%s года назад</relativeTimePattern>
+					<relativeTimePattern count="many">%s лет назад</relativeTimePattern>
+					<relativeTimePattern count="other">%s года назад</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -2761,16 +2761,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">в этом месяце</relative>
 				<relative type="1">в следующем месяце</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Через {0} месяц</relativeTimePattern>
-					<relativeTimePattern count="few">Через {0} месяца</relativeTimePattern>
-					<relativeTimePattern count="many">Через {0} месяцев</relativeTimePattern>
-					<relativeTimePattern count="other">Через {0} месяца</relativeTimePattern>
+					<relativeTimePattern count="one">Через %s месяц</relativeTimePattern>
+					<relativeTimePattern count="few">Через %s месяца</relativeTimePattern>
+					<relativeTimePattern count="many">Через %s месяцев</relativeTimePattern>
+					<relativeTimePattern count="other">Через %s месяца</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} месяц назад</relativeTimePattern>
-					<relativeTimePattern count="few">{0} месяца назад</relativeTimePattern>
-					<relativeTimePattern count="many">{0} месяцев назад</relativeTimePattern>
-					<relativeTimePattern count="other">{0} месяца назад</relativeTimePattern>
+					<relativeTimePattern count="one">%s месяц назад</relativeTimePattern>
+					<relativeTimePattern count="few">%s месяца назад</relativeTimePattern>
+					<relativeTimePattern count="many">%s месяцев назад</relativeTimePattern>
+					<relativeTimePattern count="other">%s месяца назад</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -2779,16 +2779,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">на этой неделе</relative>
 				<relative type="1">на следующей неделе</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Через {0} неделю</relativeTimePattern>
-					<relativeTimePattern count="few">Через {0} недели</relativeTimePattern>
-					<relativeTimePattern count="many">Через {0} недель</relativeTimePattern>
-					<relativeTimePattern count="other">Через {0} недели</relativeTimePattern>
+					<relativeTimePattern count="one">Через %s неделю</relativeTimePattern>
+					<relativeTimePattern count="few">Через %s недели</relativeTimePattern>
+					<relativeTimePattern count="many">Через %s недель</relativeTimePattern>
+					<relativeTimePattern count="other">Через %s недели</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} неделю назад</relativeTimePattern>
-					<relativeTimePattern count="few">{0} недели назад</relativeTimePattern>
-					<relativeTimePattern count="many">{0} недель назад</relativeTimePattern>
-					<relativeTimePattern count="other">{0} недели назад</relativeTimePattern>
+					<relativeTimePattern count="one">%s неделю назад</relativeTimePattern>
+					<relativeTimePattern count="few">%s недели назад</relativeTimePattern>
+					<relativeTimePattern count="many">%s недель назад</relativeTimePattern>
+					<relativeTimePattern count="other">%s недели назад</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -2799,16 +2799,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="1">завтра</relative>
 				<relative type="2">послезавтра</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Через {0} день</relativeTimePattern>
-					<relativeTimePattern count="few">Через {0} дня</relativeTimePattern>
-					<relativeTimePattern count="many">Через {0} дней</relativeTimePattern>
-					<relativeTimePattern count="other">Через {0} дня</relativeTimePattern>
+					<relativeTimePattern count="one">Через %s день</relativeTimePattern>
+					<relativeTimePattern count="few">Через %s дня</relativeTimePattern>
+					<relativeTimePattern count="many">Через %s дней</relativeTimePattern>
+					<relativeTimePattern count="other">Через %s дня</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} день назад</relativeTimePattern>
-					<relativeTimePattern count="few">{0} дня назад</relativeTimePattern>
-					<relativeTimePattern count="many">{0} дней назад</relativeTimePattern>
-					<relativeTimePattern count="other">{0} дня назад</relativeTimePattern>
+					<relativeTimePattern count="one">%s день назад</relativeTimePattern>
+					<relativeTimePattern count="few">%s дня назад</relativeTimePattern>
+					<relativeTimePattern count="many">%s дней назад</relativeTimePattern>
+					<relativeTimePattern count="other">%s дня назад</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -2855,47 +2855,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="hour">
 				<displayName>Час</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Через {0} час</relativeTimePattern>
-					<relativeTimePattern count="few">Через {0} часа</relativeTimePattern>
-					<relativeTimePattern count="many">Через {0} часов</relativeTimePattern>
-					<relativeTimePattern count="other">Через {0} часа</relativeTimePattern>
+					<relativeTimePattern count="one">Через %s час</relativeTimePattern>
+					<relativeTimePattern count="few">Через %s часа</relativeTimePattern>
+					<relativeTimePattern count="many">Через %s часов</relativeTimePattern>
+					<relativeTimePattern count="other">Через %s часа</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} час назад</relativeTimePattern>
-					<relativeTimePattern count="few">{0} часа назад</relativeTimePattern>
-					<relativeTimePattern count="many">{0} часов назад</relativeTimePattern>
-					<relativeTimePattern count="other">{0} часа назад</relativeTimePattern>
+					<relativeTimePattern count="one">%s час назад</relativeTimePattern>
+					<relativeTimePattern count="few">%s часа назад</relativeTimePattern>
+					<relativeTimePattern count="many">%s часов назад</relativeTimePattern>
+					<relativeTimePattern count="other">%s часа назад</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
 				<displayName>Минута</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Через {0} минуту</relativeTimePattern>
-					<relativeTimePattern count="few">Через {0} минуты</relativeTimePattern>
-					<relativeTimePattern count="many">Через {0} минут</relativeTimePattern>
-					<relativeTimePattern count="other">Через {0} минуты</relativeTimePattern>
+					<relativeTimePattern count="one">Через %s минуту</relativeTimePattern>
+					<relativeTimePattern count="few">Через %s минуты</relativeTimePattern>
+					<relativeTimePattern count="many">Через %s минут</relativeTimePattern>
+					<relativeTimePattern count="other">Через %s минуты</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} минуту назад</relativeTimePattern>
-					<relativeTimePattern count="few">{0} минуты назад</relativeTimePattern>
-					<relativeTimePattern count="many">{0} минут назад</relativeTimePattern>
-					<relativeTimePattern count="other">{0} минуты назад</relativeTimePattern>
+					<relativeTimePattern count="one">%s минуту назад</relativeTimePattern>
+					<relativeTimePattern count="few">%s минуты назад</relativeTimePattern>
+					<relativeTimePattern count="many">%s минут назад</relativeTimePattern>
+					<relativeTimePattern count="other">%s минуты назад</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
 				<displayName>Секунда</displayName>
 				<relative type="0">сейчас</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Через {0} секунду</relativeTimePattern>
-					<relativeTimePattern count="few">Через {0} секунды</relativeTimePattern>
-					<relativeTimePattern count="many">Через {0} секунд</relativeTimePattern>
-					<relativeTimePattern count="other">Через {0} секунды</relativeTimePattern>
+					<relativeTimePattern count="one">Через %s секунду</relativeTimePattern>
+					<relativeTimePattern count="few">Через %s секунды</relativeTimePattern>
+					<relativeTimePattern count="many">Через %s секунд</relativeTimePattern>
+					<relativeTimePattern count="other">Через %s секунды</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} секунду назад</relativeTimePattern>
-					<relativeTimePattern count="few">{0} секунды назад</relativeTimePattern>
-					<relativeTimePattern count="many">{0} секунд назад</relativeTimePattern>
-					<relativeTimePattern count="other">{0} секунды назад</relativeTimePattern>
+					<relativeTimePattern count="one">%s секунду назад</relativeTimePattern>
+					<relativeTimePattern count="few">%s секунды назад</relativeTimePattern>
+					<relativeTimePattern count="many">%s секунд назад</relativeTimePattern>
+					<relativeTimePattern count="other">%s секунды назад</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -2904,12 +2904,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</fields>
 		<timeZoneNames>
 			<hourFormat draft="contributed">+HH:mm;-HH:mm</hourFormat>
-			<gmtFormat draft="contributed">GMT{0}</gmtFormat>
+			<gmtFormat draft="contributed">GMT%s</gmtFormat>
 			<gmtZeroFormat draft="contributed">GMT</gmtZeroFormat>
-			<regionFormat draft="contributed">{0} время</regionFormat>
-			<regionFormat type="daylight" draft="contributed">{0} (+1)</regionFormat>
-			<regionFormat type="standard" draft="contributed">{0} (+0)</regionFormat>
-			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<regionFormat draft="contributed">%s время</regionFormat>
+			<regionFormat type="daylight" draft="contributed">%s (+1)</regionFormat>
+			<regionFormat type="standard" draft="contributed">%s (+0)</regionFormat>
+			<fallbackFormat>{1} (%s)</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Неизвестный город</exemplarCity>
 			</zone>
@@ -5242,10 +5242,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern>#,##0.00 ¤</pattern>
 				</currencyFormat>
 			</currencyFormatLength>
-			<unitPattern count="one" draft="contributed">{0} {1}</unitPattern>
-			<unitPattern count="few" draft="contributed">{0} {1}</unitPattern>
-			<unitPattern count="many" draft="contributed">{0} {1}</unitPattern>
-			<unitPattern count="other" draft="contributed">{0} {1}</unitPattern>
+			<unitPattern count="one" draft="contributed">%s {1}</unitPattern>
+			<unitPattern count="few" draft="contributed">%s {1}</unitPattern>
+			<unitPattern count="many" draft="contributed">%s {1}</unitPattern>
+			<unitPattern count="other" draft="contributed">%s {1}</unitPattern>
 		</currencyFormats>
 		<currencies>
 			<currency type="ADP">
@@ -6746,852 +6746,855 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
-			<pattern type="atLeast" draft="contributed">{0}+</pattern>
-			<pattern type="range" draft="contributed">{0}-{1}</pattern>
+			<pattern type="atLeast" draft="contributed">%s+</pattern>
+			<pattern type="range" draft="contributed">%s-{1}</pattern>
 		</miscPatterns>
 	</numbers>
 	<units>
 		<unitLength type="long">
 			<compoundUnit type="per">
-				<compoundUnitPattern draft="contributed">{0} на {1}</compoundUnitPattern>
+				<compoundUnitPattern draft="contributed">%s на {1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} G</unitPattern>
+				<unitPattern count="one" draft="contributed">%s G</unitPattern>
+				<unitPattern count="few" draft="contributed">%s G</unitPattern>
+				<unitPattern count="many" draft="contributed">%s G</unitPattern>
+				<unitPattern count="other" draft="contributed">%s G</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
-				<unitPattern count="one">{0}минута</unitPattern>
-				<unitPattern count="few">{0} минуты</unitPattern>
-				<unitPattern count="many">{0}минут</unitPattern>
-				<unitPattern count="other">{0}минуты</unitPattern>
+				<unitPattern count="one">%sминута</unitPattern>
+				<unitPattern count="few">%s минуты</unitPattern>
+				<unitPattern count="many">%sминут</unitPattern>
+				<unitPattern count="other">%sминуты</unitPattern>
 			</unit>
 			<unit type="angle-arc-second">
-				<unitPattern count="one" draft="contributed">{0}секунда</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} секунды</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}секунд</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}секунды</unitPattern>
+				<unitPattern count="one" draft="contributed">%sсекунда</unitPattern>
+				<unitPattern count="few" draft="contributed">%s секунды</unitPattern>
+				<unitPattern count="many" draft="contributed">%sсекунд</unitPattern>
+				<unitPattern count="other" draft="contributed">%sсекунды</unitPattern>
 			</unit>
 			<unit type="angle-degree">
-				<unitPattern count="one" draft="contributed">{0}градус</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} градуса</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} градусов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} градуса</unitPattern>
+				<unitPattern count="one" draft="contributed">%sградус</unitPattern>
+				<unitPattern count="few" draft="contributed">%s градуса</unitPattern>
+				<unitPattern count="many" draft="contributed">%s градусов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s градуса</unitPattern>
 			</unit>
 			<unit type="area-acre">
-				<unitPattern count="one" draft="contributed">{0} акр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} акра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} акров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} акра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s акр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s акра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s акров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s акра</unitPattern>
 			</unit>
 			<unit type="area-hectare">
-				<unitPattern count="one" draft="contributed">{0} гектар</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} гектара</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} гектар</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} гектара</unitPattern>
+				<unitPattern count="one" draft="contributed">%s гектар</unitPattern>
+				<unitPattern count="few" draft="contributed">%s гектара</unitPattern>
+				<unitPattern count="many" draft="contributed">%s гектар</unitPattern>
+				<unitPattern count="other" draft="contributed">%s гектара</unitPattern>
 			</unit>
 			<unit type="area-square-foot">
-				<unitPattern count="one" draft="contributed">{0} квадратный фут</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} квадратных фута</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} квадратных футов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} квадратных фута</unitPattern>
+				<unitPattern count="one" draft="contributed">%s квадратный фут</unitPattern>
+				<unitPattern count="few" draft="contributed">%s квадратных фута</unitPattern>
+				<unitPattern count="many" draft="contributed">%s квадратных футов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s квадратных фута</unitPattern>
 			</unit>
 			<unit type="area-square-kilometer">
-				<unitPattern count="one" draft="contributed">{0} квадратный километр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} квадратных километра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} квадратных километров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} квадратных километра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s квадратный километр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s квадратных километра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s квадратных километров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s квадратных километра</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
-				<unitPattern count="one" draft="contributed">{0} квадратный метр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} квадратных метра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} квадратных метров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} квадратных метра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s квадратный метр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s квадратных метра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s квадратных метров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s квадратных метра</unitPattern>
 			</unit>
 			<unit type="area-square-mile">
-				<unitPattern count="one" draft="contributed">{0} квадратная миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} квадратных мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} квадратных миль</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} квадратных мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s квадратная миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s квадратных мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s квадратных миль</unitPattern>
+				<unitPattern count="other" draft="contributed">%s квадратных мили</unitPattern>
 			</unit>
 			<unit type="duration-day">
-				<unitPattern count="one">{0} день</unitPattern>
-				<unitPattern count="few">{0} дня</unitPattern>
-				<unitPattern count="many">{0} дней</unitPattern>
-				<unitPattern count="other">{0} дня</unitPattern>
+				<unitPattern count="one">%s день</unitPattern>
+				<unitPattern count="few">%s дня</unitPattern>
+				<unitPattern count="many">%s дней</unitPattern>
+				<unitPattern count="other">%s дня</unitPattern>
 			</unit>
 			<unit type="duration-hour">
-				<unitPattern count="one">{0} час</unitPattern>
-				<unitPattern count="few">{0} часа</unitPattern>
-				<unitPattern count="many">{0} часов</unitPattern>
-				<unitPattern count="other">{0} часа</unitPattern>
+				<unitPattern count="one">%s час</unitPattern>
+				<unitPattern count="few">%s часа</unitPattern>
+				<unitPattern count="many">%s часов</unitPattern>
+				<unitPattern count="other">%s часа</unitPattern>
 			</unit>
 			<unit type="duration-millisecond">
-				<unitPattern count="one">{0} миллисекунда</unitPattern>
-				<unitPattern count="few">{0} миллисекунды</unitPattern>
-				<unitPattern count="many">{0} миллисекунды</unitPattern>
-				<unitPattern count="other">{0} миллисекунды</unitPattern>
+				<unitPattern count="one">%s миллисекунда</unitPattern>
+				<unitPattern count="few">%s миллисекунды</unitPattern>
+				<unitPattern count="many">%s миллисекунды</unitPattern>
+				<unitPattern count="other">%s миллисекунды</unitPattern>
 			</unit>
 			<unit type="duration-minute">
-				<unitPattern count="one">{0} минута</unitPattern>
-				<unitPattern count="few">{0} минуты</unitPattern>
-				<unitPattern count="many">{0} минут</unitPattern>
-				<unitPattern count="other">{0} минуты</unitPattern>
+				<unitPattern count="one">%s минута</unitPattern>
+				<unitPattern count="few">%s минуты</unitPattern>
+				<unitPattern count="many">%s минут</unitPattern>
+				<unitPattern count="other">%s минуты</unitPattern>
 			</unit>
 			<unit type="duration-month">
-				<unitPattern count="one">{0} месяц</unitPattern>
-				<unitPattern count="few">{0} месяца</unitPattern>
-				<unitPattern count="many">{0} месяцев</unitPattern>
-				<unitPattern count="other">{0} месяца</unitPattern>
+				<unitPattern count="one">%s месяц</unitPattern>
+				<unitPattern count="few">%s месяца</unitPattern>
+				<unitPattern count="many">%s месяцев</unitPattern>
+				<unitPattern count="other">%s месяца</unitPattern>
 			</unit>
 			<unit type="duration-second">
-				<unitPattern count="one">{0} секунда</unitPattern>
-				<unitPattern count="few">{0} секунды</unitPattern>
-				<unitPattern count="many">{0} секунд</unitPattern>
-				<unitPattern count="other">{0} секунды</unitPattern>
+				<unitPattern count="one">%s секунда</unitPattern>
+				<unitPattern count="few">%s секунды</unitPattern>
+				<unitPattern count="many">%s секунд</unitPattern>
+				<unitPattern count="other">%s секунды</unitPattern>
 			</unit>
 			<unit type="duration-week">
-				<unitPattern count="one">{0} неделя</unitPattern>
-				<unitPattern count="few">{0} недели</unitPattern>
-				<unitPattern count="many">{0} недель</unitPattern>
-				<unitPattern count="other">{0} недели</unitPattern>
+				<unitPattern count="one">%s неделя</unitPattern>
+				<unitPattern count="few">%s недели</unitPattern>
+				<unitPattern count="many">%s недель</unitPattern>
+				<unitPattern count="other">%s недели</unitPattern>
 			</unit>
 			<unit type="duration-year">
-				<unitPattern count="one" draft="contributed">{0} год</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} года</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} лет</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} года</unitPattern>
+				<unitPattern count="one" draft="contributed">%s год</unitPattern>
+				<unitPattern count="few" draft="contributed">%s года</unitPattern>
+				<unitPattern count="many" draft="contributed">%s лет</unitPattern>
+				<unitPattern count="other" draft="contributed">%s года</unitPattern>
+			</unit>
+			<unit type="duration-recently">
+				<unitPattern count="one" draft="contributed">Совсем недавно</unitPattern>
 			</unit>
 			<unit type="length-centimeter">
-				<unitPattern count="one" draft="contributed">{0} сантиметр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} сантиметра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} сантиметров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} сантиметра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s сантиметр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s сантиметра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s сантиметров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s сантиметра</unitPattern>
 			</unit>
 			<unit type="length-foot">
-				<unitPattern count="one" draft="contributed">{0} фут</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} фута</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} футов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} фута</unitPattern>
+				<unitPattern count="one" draft="contributed">%s фут</unitPattern>
+				<unitPattern count="few" draft="contributed">%s фута</unitPattern>
+				<unitPattern count="many" draft="contributed">%s футов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s фута</unitPattern>
 			</unit>
 			<unit type="length-inch">
-				<unitPattern count="one" draft="contributed">{0} дюйм</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} дюйма</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} дюймов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} дюйма</unitPattern>
+				<unitPattern count="one" draft="contributed">%s дюйм</unitPattern>
+				<unitPattern count="few" draft="contributed">%s дюйма</unitPattern>
+				<unitPattern count="many" draft="contributed">%s дюймов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s дюйма</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
-				<unitPattern count="one" draft="contributed">{0} километр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} километра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} километров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} километра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s километр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s километра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s километров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s километра</unitPattern>
 			</unit>
 			<unit type="length-light-year">
-				<unitPattern count="one" draft="contributed">{0} световой год</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} световых года</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} световых лет</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} световых года</unitPattern>
+				<unitPattern count="one" draft="contributed">%s световой год</unitPattern>
+				<unitPattern count="few" draft="contributed">%s световых года</unitPattern>
+				<unitPattern count="many" draft="contributed">%s световых лет</unitPattern>
+				<unitPattern count="other" draft="contributed">%s световых года</unitPattern>
 			</unit>
 			<unit type="length-meter">
-				<unitPattern count="one" draft="contributed">{0} метр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} метра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} метров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} метра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s метр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s метра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s метров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s метра</unitPattern>
 			</unit>
 			<unit type="length-mile">
-				<unitPattern count="one" draft="contributed">{0} миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миль</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миль</unitPattern>
+				<unitPattern count="other" draft="contributed">%s мили</unitPattern>
 			</unit>
 			<unit type="length-millimeter">
-				<unitPattern count="one" draft="contributed">{0} миллиметр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} миллиметра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миллиметров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} миллиметра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миллиметр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s миллиметра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миллиметров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s миллиметра</unitPattern>
 			</unit>
 			<unit type="length-picometer">
-				<unitPattern count="one" draft="contributed">{0} пикометр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} пикометра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} пикометров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} пикометра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s пикометр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s пикометра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s пикометров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s пикометра</unitPattern>
 			</unit>
 			<unit type="length-yard">
-				<unitPattern count="one" draft="contributed">{0} ярд</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} ярда</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} ярдов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} ярда</unitPattern>
+				<unitPattern count="one" draft="contributed">%s ярд</unitPattern>
+				<unitPattern count="few" draft="contributed">%s ярда</unitPattern>
+				<unitPattern count="many" draft="contributed">%s ярдов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s ярда</unitPattern>
 			</unit>
 			<unit type="mass-gram">
-				<unitPattern count="one" draft="contributed">{0} грамм</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} грамма</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} грамм</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} грамма</unitPattern>
+				<unitPattern count="one" draft="contributed">%s грамм</unitPattern>
+				<unitPattern count="few" draft="contributed">%s грамма</unitPattern>
+				<unitPattern count="many" draft="contributed">%s грамм</unitPattern>
+				<unitPattern count="other" draft="contributed">%s грамма</unitPattern>
 			</unit>
 			<unit type="mass-kilogram">
-				<unitPattern count="one" draft="contributed">{0} килограмм</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} килограмма</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} килограмм</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} килограмма</unitPattern>
+				<unitPattern count="one" draft="contributed">%s килограмм</unitPattern>
+				<unitPattern count="few" draft="contributed">%s килограмма</unitPattern>
+				<unitPattern count="many" draft="contributed">%s килограмм</unitPattern>
+				<unitPattern count="other" draft="contributed">%s килограмма</unitPattern>
 			</unit>
 			<unit type="mass-ounce">
-				<unitPattern count="one" draft="contributed">{0} унция</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} унции</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} унций</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} унции</unitPattern>
+				<unitPattern count="one" draft="contributed">%s унция</unitPattern>
+				<unitPattern count="few" draft="contributed">%s унции</unitPattern>
+				<unitPattern count="many" draft="contributed">%s унций</unitPattern>
+				<unitPattern count="other" draft="contributed">%s унции</unitPattern>
 			</unit>
 			<unit type="mass-pound">
-				<unitPattern count="one" draft="contributed">{0} фунт</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} фунта</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} фунтов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} фунта</unitPattern>
+				<unitPattern count="one" draft="contributed">%s фунт</unitPattern>
+				<unitPattern count="few" draft="contributed">%s фунта</unitPattern>
+				<unitPattern count="many" draft="contributed">%s фунтов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s фунта</unitPattern>
 			</unit>
 			<unit type="power-horsepower">
-				<unitPattern count="one" draft="contributed">{0} лошадиная сила</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} лошадиных силы</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} лошадиных сил</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} лошадиных сил</unitPattern>
+				<unitPattern count="one" draft="contributed">%s лошадиная сила</unitPattern>
+				<unitPattern count="few" draft="contributed">%s лошадиных силы</unitPattern>
+				<unitPattern count="many" draft="contributed">%s лошадиных сил</unitPattern>
+				<unitPattern count="other" draft="contributed">%s лошадиных сил</unitPattern>
 			</unit>
 			<unit type="power-kilowatt">
-				<unitPattern count="one" draft="contributed">{0} киловатт</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} киловатта</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} киловатт</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} киловатта</unitPattern>
+				<unitPattern count="one" draft="contributed">%s киловатт</unitPattern>
+				<unitPattern count="few" draft="contributed">%s киловатта</unitPattern>
+				<unitPattern count="many" draft="contributed">%s киловатт</unitPattern>
+				<unitPattern count="other" draft="contributed">%s киловатта</unitPattern>
 			</unit>
 			<unit type="power-watt">
-				<unitPattern count="one" draft="contributed">{0} ватт</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} ватта</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} ватт</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} ватта</unitPattern>
+				<unitPattern count="one" draft="contributed">%s ватт</unitPattern>
+				<unitPattern count="few" draft="contributed">%s ватта</unitPattern>
+				<unitPattern count="many" draft="contributed">%s ватт</unitPattern>
+				<unitPattern count="other" draft="contributed">%s ватта</unitPattern>
 			</unit>
 			<unit type="pressure-hectopascal">
-				<unitPattern count="one" draft="contributed">{0} гектопаскаль</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} гектопаскаля</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} гектопаскалей</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} гектопаскаля</unitPattern>
+				<unitPattern count="one" draft="contributed">%s гектопаскаль</unitPattern>
+				<unitPattern count="few" draft="contributed">%s гектопаскаля</unitPattern>
+				<unitPattern count="many" draft="contributed">%s гектопаскалей</unitPattern>
+				<unitPattern count="other" draft="contributed">%s гектопаскаля</unitPattern>
 			</unit>
 			<unit type="pressure-inch-hg">
-				<unitPattern count="one" draft="contributed">{0} дюйм ртутного столба</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} дюйма ртутного столба</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} дюймов ртутного столба</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}дюйма ртутного столба</unitPattern>
+				<unitPattern count="one" draft="contributed">%s дюйм ртутного столба</unitPattern>
+				<unitPattern count="few" draft="contributed">%s дюйма ртутного столба</unitPattern>
+				<unitPattern count="many" draft="contributed">%s дюймов ртутного столба</unitPattern>
+				<unitPattern count="other" draft="contributed">%sдюйма ртутного столба</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
-				<unitPattern count="one" draft="contributed">{0} миллибар</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} миллибара</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миллибар</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} миллибара</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миллибар</unitPattern>
+				<unitPattern count="few" draft="contributed">%s миллибара</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миллибар</unitPattern>
+				<unitPattern count="other" draft="contributed">%s миллибара</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
-				<unitPattern count="one" draft="contributed">{0} километр в час</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} километра в час</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} километров в час</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} километра в час</unitPattern>
+				<unitPattern count="one" draft="contributed">%s километр в час</unitPattern>
+				<unitPattern count="few" draft="contributed">%s километра в час</unitPattern>
+				<unitPattern count="many" draft="contributed">%s километров в час</unitPattern>
+				<unitPattern count="other" draft="contributed">%s километра в час</unitPattern>
 			</unit>
 			<unit type="speed-meter-per-second">
-				<unitPattern count="one" draft="contributed">{0} метр в секунду</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} метра в секундыу</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} метров в секунду</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} метра в секунду</unitPattern>
+				<unitPattern count="one" draft="contributed">%s метр в секунду</unitPattern>
+				<unitPattern count="few" draft="contributed">%s метра в секундыу</unitPattern>
+				<unitPattern count="many" draft="contributed">%s метров в секунду</unitPattern>
+				<unitPattern count="other" draft="contributed">%s метра в секунду</unitPattern>
 			</unit>
 			<unit type="speed-mile-per-hour">
-				<unitPattern count="one" draft="contributed">{0} миля в час</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мили в час</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миль в час</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} миль в час</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миля в час</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мили в час</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миль в час</unitPattern>
+				<unitPattern count="other" draft="contributed">%s миль в час</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
-				<unitPattern count="one" draft="contributed">{0}градус Цельсия</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} градуса Цельсия</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}градусов Цельсия</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}градуса Цельсия</unitPattern>
+				<unitPattern count="one" draft="contributed">%sградус Цельсия</unitPattern>
+				<unitPattern count="few" draft="contributed">%s градуса Цельсия</unitPattern>
+				<unitPattern count="many" draft="contributed">%sградусов Цельсия</unitPattern>
+				<unitPattern count="other" draft="contributed">%sградуса Цельсия</unitPattern>
 			</unit>
 			<unit type="temperature-fahrenheit">
-				<unitPattern count="one" draft="contributed">{0}градус по Фаренгейту</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} градуса по Фаренгейту</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}градусов по Фаренгейту</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}градуса по Фаренгейту</unitPattern>
+				<unitPattern count="one" draft="contributed">%sградус по Фаренгейту</unitPattern>
+				<unitPattern count="few" draft="contributed">%s градуса по Фаренгейту</unitPattern>
+				<unitPattern count="many" draft="contributed">%sградусов по Фаренгейту</unitPattern>
+				<unitPattern count="other" draft="contributed">%sградуса по Фаренгейту</unitPattern>
 			</unit>
 			<unit type="volume-cubic-kilometer">
-				<unitPattern count="one" draft="contributed">{0} кубический километр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кубических километра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кубических километров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кубических километра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кубический километр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кубических километра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кубических километров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кубических километра</unitPattern>
 			</unit>
 			<unit type="volume-cubic-mile">
-				<unitPattern count="one" draft="contributed">{0} кубическая миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кубических мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кубических мили</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кубических мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кубическая миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кубических мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кубических мили</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кубических мили</unitPattern>
 			</unit>
 			<unit type="volume-liter">
-				<unitPattern count="one" draft="contributed">{0} литр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} литра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} литра</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} литра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s литр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s литра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s литра</unitPattern>
+				<unitPattern count="other" draft="contributed">%s литра</unitPattern>
 			</unit>
 		</unitLength>
 		<unitLength type="short">
 			<compoundUnit type="per">
-				<compoundUnitPattern draft="contributed">{0}/{1}</compoundUnitPattern>
+				<compoundUnitPattern draft="contributed">%s/{1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} G</unitPattern>
+				<unitPattern count="one" draft="contributed">%s G</unitPattern>
+				<unitPattern count="few" draft="contributed">%s G</unitPattern>
+				<unitPattern count="many" draft="contributed">%s G</unitPattern>
+				<unitPattern count="other" draft="contributed">%s G</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
-				<unitPattern count="one" draft="contributed">{0}′</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}′</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}′</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}′</unitPattern>
+				<unitPattern count="one" draft="contributed">%s′</unitPattern>
+				<unitPattern count="few" draft="contributed">%s′</unitPattern>
+				<unitPattern count="many" draft="contributed">%s′</unitPattern>
+				<unitPattern count="other" draft="contributed">%s′</unitPattern>
 			</unit>
 			<unit type="angle-arc-second">
-				<unitPattern count="one" draft="contributed">{0}″</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}″</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}″</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}″</unitPattern>
+				<unitPattern count="one" draft="contributed">%s″</unitPattern>
+				<unitPattern count="few" draft="contributed">%s″</unitPattern>
+				<unitPattern count="many" draft="contributed">%s″</unitPattern>
+				<unitPattern count="other" draft="contributed">%s″</unitPattern>
 			</unit>
 			<unit type="angle-degree">
-				<unitPattern count="one" draft="contributed">{0}°</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}°</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}°</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}°</unitPattern>
+				<unitPattern count="one" draft="contributed">%s°</unitPattern>
+				<unitPattern count="few" draft="contributed">%s°</unitPattern>
+				<unitPattern count="many" draft="contributed">%s°</unitPattern>
+				<unitPattern count="other" draft="contributed">%s°</unitPattern>
 			</unit>
 			<unit type="area-acre">
-				<unitPattern count="one" draft="contributed">{0} акр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} акра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} акров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} акра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s акр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s акра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s акров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s акра</unitPattern>
 			</unit>
 			<unit type="area-hectare">
-				<unitPattern count="one" draft="contributed">{0} га</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} га</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} га</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} га</unitPattern>
+				<unitPattern count="one" draft="contributed">%s га</unitPattern>
+				<unitPattern count="few" draft="contributed">%s га</unitPattern>
+				<unitPattern count="many" draft="contributed">%s га</unitPattern>
+				<unitPattern count="other" draft="contributed">%s га</unitPattern>
 			</unit>
 			<unit type="area-square-foot">
-				<unitPattern count="one" draft="contributed">{0} кв. фут</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кв. фута</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кв. футов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кв. фута</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кв. фут</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кв. фута</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кв. футов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кв. фута</unitPattern>
 			</unit>
 			<unit type="area-square-kilometer">
-				<unitPattern count="one" draft="contributed">{0} км²</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км²</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км²</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км²</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км²</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км²</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км²</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км²</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
-				<unitPattern count="one" draft="contributed">{0} м²</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} м²</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} м²</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} м²</unitPattern>
+				<unitPattern count="one" draft="contributed">%s м²</unitPattern>
+				<unitPattern count="few" draft="contributed">%s м²</unitPattern>
+				<unitPattern count="many" draft="contributed">%s м²</unitPattern>
+				<unitPattern count="other" draft="contributed">%s м²</unitPattern>
 			</unit>
 			<unit type="area-square-mile">
-				<unitPattern count="one" draft="contributed">{0} кв. миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кв. мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кв. миль</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кв. мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кв. миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кв. мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кв. миль</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кв. мили</unitPattern>
 			</unit>
 			<unit type="duration-day">
-				<unitPattern count="one">{0} дн</unitPattern>
-				<unitPattern count="few">{0} дн</unitPattern>
-				<unitPattern count="many">{0} дн</unitPattern>
-				<unitPattern count="other">{0} дн</unitPattern>
+				<unitPattern count="one">%s дн</unitPattern>
+				<unitPattern count="few">%s дн</unitPattern>
+				<unitPattern count="many">%s дн</unitPattern>
+				<unitPattern count="other">%s дн</unitPattern>
 			</unit>
 			<unit type="duration-hour">
-				<unitPattern count="one">{0} ч</unitPattern>
-				<unitPattern count="few">{0} ч</unitPattern>
-				<unitPattern count="many">{0} ч</unitPattern>
-				<unitPattern count="other">{0} ч</unitPattern>
+				<unitPattern count="one">%s ч</unitPattern>
+				<unitPattern count="few">%s ч</unitPattern>
+				<unitPattern count="many">%s ч</unitPattern>
+				<unitPattern count="other">%s ч</unitPattern>
 			</unit>
 			<unit type="duration-millisecond">
-				<unitPattern count="one">{0} мс</unitPattern>
-				<unitPattern count="few">{0} мс</unitPattern>
-				<unitPattern count="many">{0} мс</unitPattern>
-				<unitPattern count="other">{0} мс</unitPattern>
+				<unitPattern count="one">%s мс</unitPattern>
+				<unitPattern count="few">%s мс</unitPattern>
+				<unitPattern count="many">%s мс</unitPattern>
+				<unitPattern count="other">%s мс</unitPattern>
 			</unit>
 			<unit type="duration-minute">
-				<unitPattern count="one">{0} мин</unitPattern>
-				<unitPattern count="few">{0} мин</unitPattern>
-				<unitPattern count="many">{0} мин</unitPattern>
-				<unitPattern count="other">{0} мин</unitPattern>
+				<unitPattern count="one">%s мин</unitPattern>
+				<unitPattern count="few">%s мин</unitPattern>
+				<unitPattern count="many">%s мин</unitPattern>
+				<unitPattern count="other">%s мин</unitPattern>
 			</unit>
 			<unit type="duration-month">
-				<unitPattern count="one">{0} мес</unitPattern>
-				<unitPattern count="few">{0} мес</unitPattern>
-				<unitPattern count="many">{0} мес</unitPattern>
-				<unitPattern count="other">{0} мес</unitPattern>
+				<unitPattern count="one">%s мес</unitPattern>
+				<unitPattern count="few">%s мес</unitPattern>
+				<unitPattern count="many">%s мес</unitPattern>
+				<unitPattern count="other">%s мес</unitPattern>
 			</unit>
 			<unit type="duration-second">
-				<unitPattern count="one">{0} с</unitPattern>
-				<unitPattern count="few">{0} с</unitPattern>
-				<unitPattern count="many">{0} с</unitPattern>
-				<unitPattern count="other">{0} с</unitPattern>
+				<unitPattern count="one">%s с</unitPattern>
+				<unitPattern count="few">%s с</unitPattern>
+				<unitPattern count="many">%s с</unitPattern>
+				<unitPattern count="other">%s с</unitPattern>
 			</unit>
 			<unit type="duration-week">
-				<unitPattern count="one">{0} нед</unitPattern>
-				<unitPattern count="few">{0} нед</unitPattern>
-				<unitPattern count="many">{0} нед</unitPattern>
-				<unitPattern count="other">{0} нед</unitPattern>
+				<unitPattern count="one">%s нед</unitPattern>
+				<unitPattern count="few">%s нед</unitPattern>
+				<unitPattern count="many">%s нед</unitPattern>
+				<unitPattern count="other">%s нед</unitPattern>
 			</unit>
 			<unit type="duration-year">
-				<unitPattern count="one" draft="contributed">{0} г.</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} года</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} лет</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} г.</unitPattern>
+				<unitPattern count="one" draft="contributed">%s г.</unitPattern>
+				<unitPattern count="few" draft="contributed">%s года</unitPattern>
+				<unitPattern count="many" draft="contributed">%s лет</unitPattern>
+				<unitPattern count="other" draft="contributed">%s г.</unitPattern>
 			</unit>
 			<unit type="length-centimeter">
-				<unitPattern count="one" draft="contributed">{0} см</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} см</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} см</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} см</unitPattern>
+				<unitPattern count="one" draft="contributed">%s см</unitPattern>
+				<unitPattern count="few" draft="contributed">%s см</unitPattern>
+				<unitPattern count="many" draft="contributed">%s см</unitPattern>
+				<unitPattern count="other" draft="contributed">%s см</unitPattern>
 			</unit>
 			<unit type="length-foot">
-				<unitPattern count="one" draft="contributed">{0} фут</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} фута</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} футов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} фута</unitPattern>
+				<unitPattern count="one" draft="contributed">%s фут</unitPattern>
+				<unitPattern count="few" draft="contributed">%s фута</unitPattern>
+				<unitPattern count="many" draft="contributed">%s футов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s фута</unitPattern>
 			</unit>
 			<unit type="length-inch">
-				<unitPattern count="one" draft="contributed">{0} дюйм</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} дюйма</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} дюймов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} дюйма</unitPattern>
+				<unitPattern count="one" draft="contributed">%s дюйм</unitPattern>
+				<unitPattern count="few" draft="contributed">%s дюйма</unitPattern>
+				<unitPattern count="many" draft="contributed">%s дюймов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s дюйма</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
-				<unitPattern count="one" draft="contributed">{0} км</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км</unitPattern>
 			</unit>
 			<unit type="length-light-year">
-				<unitPattern count="one" draft="contributed">{0} св. г.</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} св. л.</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} св. л.</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} св. г.</unitPattern>
+				<unitPattern count="one" draft="contributed">%s св. г.</unitPattern>
+				<unitPattern count="few" draft="contributed">%s св. л.</unitPattern>
+				<unitPattern count="many" draft="contributed">%s св. л.</unitPattern>
+				<unitPattern count="other" draft="contributed">%s св. г.</unitPattern>
 			</unit>
 			<unit type="length-meter">
-				<unitPattern count="one" draft="contributed">{0} м</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} м</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} м</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} м</unitPattern>
+				<unitPattern count="one" draft="contributed">%s м</unitPattern>
+				<unitPattern count="few" draft="contributed">%s м</unitPattern>
+				<unitPattern count="many" draft="contributed">%s м</unitPattern>
+				<unitPattern count="other" draft="contributed">%s м</unitPattern>
 			</unit>
 			<unit type="length-mile">
-				<unitPattern count="one" draft="contributed">{0} миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миль</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миль</unitPattern>
+				<unitPattern count="other" draft="contributed">%s мили</unitPattern>
 			</unit>
 			<unit type="length-millimeter">
-				<unitPattern count="one" draft="contributed">{0} мм</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мм</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} мм</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} мм</unitPattern>
+				<unitPattern count="one" draft="contributed">%s мм</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мм</unitPattern>
+				<unitPattern count="many" draft="contributed">%s мм</unitPattern>
+				<unitPattern count="other" draft="contributed">%s мм</unitPattern>
 			</unit>
 			<unit type="length-picometer">
-				<unitPattern count="one" draft="contributed">{0} pm</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} pm</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} pm</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} pm</unitPattern>
+				<unitPattern count="one" draft="contributed">%s pm</unitPattern>
+				<unitPattern count="few" draft="contributed">%s pm</unitPattern>
+				<unitPattern count="many" draft="contributed">%s pm</unitPattern>
+				<unitPattern count="other" draft="contributed">%s pm</unitPattern>
 			</unit>
 			<unit type="length-yard">
-				<unitPattern count="one" draft="contributed">{0} ярд</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} ярда</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} ярдов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} ярда</unitPattern>
+				<unitPattern count="one" draft="contributed">%s ярд</unitPattern>
+				<unitPattern count="few" draft="contributed">%s ярда</unitPattern>
+				<unitPattern count="many" draft="contributed">%s ярдов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s ярда</unitPattern>
 			</unit>
 			<unit type="mass-gram">
-				<unitPattern count="one" draft="contributed">{0} гр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} гр</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} гр</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} гр</unitPattern>
+				<unitPattern count="one" draft="contributed">%s гр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s гр</unitPattern>
+				<unitPattern count="many" draft="contributed">%s гр</unitPattern>
+				<unitPattern count="other" draft="contributed">%s гр</unitPattern>
 			</unit>
 			<unit type="mass-kilogram">
-				<unitPattern count="one" draft="contributed">{0} кг</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кг</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кг</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кг</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кг</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кг</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кг</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кг</unitPattern>
 			</unit>
 			<unit type="mass-ounce">
-				<unitPattern count="one" draft="contributed">{0} oz</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} oz</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} oz</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} oz</unitPattern>
+				<unitPattern count="one" draft="contributed">%s oz</unitPattern>
+				<unitPattern count="few" draft="contributed">%s oz</unitPattern>
+				<unitPattern count="many" draft="contributed">%s oz</unitPattern>
+				<unitPattern count="other" draft="contributed">%s oz</unitPattern>
 			</unit>
 			<unit type="mass-pound">
-				<unitPattern count="one" draft="contributed">{0} lb</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} lb</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} lb</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} lb</unitPattern>
+				<unitPattern count="one" draft="contributed">%s lb</unitPattern>
+				<unitPattern count="few" draft="contributed">%s lb</unitPattern>
+				<unitPattern count="many" draft="contributed">%s lb</unitPattern>
+				<unitPattern count="other" draft="contributed">%s lb</unitPattern>
 			</unit>
 			<unit type="power-horsepower">
-				<unitPattern count="one" draft="contributed">{0} л.с.</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} л.с.</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} л.с.</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} л.с.</unitPattern>
+				<unitPattern count="one" draft="contributed">%s л.с.</unitPattern>
+				<unitPattern count="few" draft="contributed">%s л.с.</unitPattern>
+				<unitPattern count="many" draft="contributed">%s л.с.</unitPattern>
+				<unitPattern count="other" draft="contributed">%s л.с.</unitPattern>
 			</unit>
 			<unit type="power-kilowatt">
-				<unitPattern count="one" draft="contributed">{0} кВт</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кВт</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кВт</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кВт</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кВт</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кВт</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кВт</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кВт</unitPattern>
 			</unit>
 			<unit type="power-watt">
-				<unitPattern count="one" draft="contributed">{0} Вт</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} Вт</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} Вт</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} Вт</unitPattern>
+				<unitPattern count="one" draft="contributed">%s Вт</unitPattern>
+				<unitPattern count="few" draft="contributed">%s Вт</unitPattern>
+				<unitPattern count="many" draft="contributed">%s Вт</unitPattern>
+				<unitPattern count="other" draft="contributed">%s Вт</unitPattern>
 			</unit>
 			<unit type="pressure-hectopascal">
-				<unitPattern count="one" draft="contributed">{0} гПа</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} гПа</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} гПа</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} гПа</unitPattern>
+				<unitPattern count="one" draft="contributed">%s гПа</unitPattern>
+				<unitPattern count="few" draft="contributed">%s гПа</unitPattern>
+				<unitPattern count="many" draft="contributed">%s гПа</unitPattern>
+				<unitPattern count="other" draft="contributed">%s гПа</unitPattern>
 			</unit>
 			<unit type="pressure-inch-hg">
-				<unitPattern count="one" draft="contributed">{0} дюйм рт. ст</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} дюйма рт. ст</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} дюймов рт. ст</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} дюйма рт. ст</unitPattern>
+				<unitPattern count="one" draft="contributed">%s дюйм рт. ст</unitPattern>
+				<unitPattern count="few" draft="contributed">%s дюйма рт. ст</unitPattern>
+				<unitPattern count="many" draft="contributed">%s дюймов рт. ст</unitPattern>
+				<unitPattern count="other" draft="contributed">%s дюйма рт. ст</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
-				<unitPattern count="one" draft="contributed">{0} мбар</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мбар</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} мбар</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} мбар</unitPattern>
+				<unitPattern count="one" draft="contributed">%s мбар</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мбар</unitPattern>
+				<unitPattern count="many" draft="contributed">%s мбар</unitPattern>
+				<unitPattern count="other" draft="contributed">%s мбар</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
-				<unitPattern count="one" draft="contributed">{0} км/ч</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км/ч</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км/ч</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км/ч</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км/ч</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км/ч</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км/ч</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км/ч</unitPattern>
 			</unit>
 			<unit type="speed-meter-per-second">
-				<unitPattern count="one" draft="contributed">{0} м/с</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} м/с</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} м/с</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} м/с</unitPattern>
+				<unitPattern count="one" draft="contributed">%s м/с</unitPattern>
+				<unitPattern count="few" draft="contributed">%s м/с</unitPattern>
+				<unitPattern count="many" draft="contributed">%s м/с</unitPattern>
+				<unitPattern count="other" draft="contributed">%s м/с</unitPattern>
 			</unit>
 			<unit type="speed-mile-per-hour">
-				<unitPattern count="one" draft="contributed">{0} миль/час</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мили/час</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миль/час</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} миль/час</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миль/час</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мили/час</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миль/час</unitPattern>
+				<unitPattern count="other" draft="contributed">%s миль/час</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
-				<unitPattern count="one">{0} °C</unitPattern>
-				<unitPattern count="few">{0} °C</unitPattern>
-				<unitPattern count="many">{0} °C</unitPattern>
-				<unitPattern count="other">{0} °C</unitPattern>
+				<unitPattern count="one">%s °C</unitPattern>
+				<unitPattern count="few">%s °C</unitPattern>
+				<unitPattern count="many">%s °C</unitPattern>
+				<unitPattern count="other">%s °C</unitPattern>
 			</unit>
 			<unit type="temperature-fahrenheit">
-				<unitPattern count="one" draft="contributed">{0}°F</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}°F</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}°F</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}°F</unitPattern>
+				<unitPattern count="one" draft="contributed">%s°F</unitPattern>
+				<unitPattern count="few" draft="contributed">%s°F</unitPattern>
+				<unitPattern count="many" draft="contributed">%s°F</unitPattern>
+				<unitPattern count="other" draft="contributed">%s°F</unitPattern>
 			</unit>
 			<unit type="volume-cubic-kilometer">
-				<unitPattern count="one" draft="contributed">{0} км³</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км³</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км³</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км³</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км³</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км³</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км³</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км³</unitPattern>
 			</unit>
 			<unit type="volume-cubic-mile">
-				<unitPattern count="one" draft="contributed">{0} куб. миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} куб. мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} куб. мили</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} куб. мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s куб. миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s куб. мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s куб. мили</unitPattern>
+				<unitPattern count="other" draft="contributed">%s куб. мили</unitPattern>
 			</unit>
 			<unit type="volume-liter">
-				<unitPattern count="one" draft="contributed">{0} л</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} л</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} л</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} л</unitPattern>
+				<unitPattern count="one" draft="contributed">%s л</unitPattern>
+				<unitPattern count="few" draft="contributed">%s л</unitPattern>
+				<unitPattern count="many" draft="contributed">%s л</unitPattern>
+				<unitPattern count="other" draft="contributed">%s л</unitPattern>
 			</unit>
 		</unitLength>
 		<unitLength type="narrow">
 			<compoundUnit type="per">
-				<compoundUnitPattern draft="contributed">{0}/{1}</compoundUnitPattern>
+				<compoundUnitPattern draft="contributed">%s/{1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} G</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} G</unitPattern>
+				<unitPattern count="one" draft="contributed">%s G</unitPattern>
+				<unitPattern count="few" draft="contributed">%s G</unitPattern>
+				<unitPattern count="many" draft="contributed">%s G</unitPattern>
+				<unitPattern count="other" draft="contributed">%s G</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
-				<unitPattern count="one" draft="contributed">{0}′</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}′</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}′</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}′</unitPattern>
+				<unitPattern count="one" draft="contributed">%s′</unitPattern>
+				<unitPattern count="few" draft="contributed">%s′</unitPattern>
+				<unitPattern count="many" draft="contributed">%s′</unitPattern>
+				<unitPattern count="other" draft="contributed">%s′</unitPattern>
 			</unit>
 			<unit type="angle-arc-second">
-				<unitPattern count="one" draft="contributed">{0}″</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}″</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}″</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}″</unitPattern>
+				<unitPattern count="one" draft="contributed">%s″</unitPattern>
+				<unitPattern count="few" draft="contributed">%s″</unitPattern>
+				<unitPattern count="many" draft="contributed">%s″</unitPattern>
+				<unitPattern count="other" draft="contributed">%s″</unitPattern>
 			</unit>
 			<unit type="angle-degree">
-				<unitPattern count="one" draft="contributed">{0}°</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}°</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}°</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}°</unitPattern>
+				<unitPattern count="one" draft="contributed">%s°</unitPattern>
+				<unitPattern count="few" draft="contributed">%s°</unitPattern>
+				<unitPattern count="many" draft="contributed">%s°</unitPattern>
+				<unitPattern count="other" draft="contributed">%s°</unitPattern>
 			</unit>
 			<unit type="area-acre">
-				<unitPattern count="one" draft="contributed">{0} акр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} акра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} акров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} акра</unitPattern>
+				<unitPattern count="one" draft="contributed">%s акр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s акра</unitPattern>
+				<unitPattern count="many" draft="contributed">%s акров</unitPattern>
+				<unitPattern count="other" draft="contributed">%s акра</unitPattern>
 			</unit>
 			<unit type="area-hectare">
-				<unitPattern count="one" draft="contributed">{0} га</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} га</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} га</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} га</unitPattern>
+				<unitPattern count="one" draft="contributed">%s га</unitPattern>
+				<unitPattern count="few" draft="contributed">%s га</unitPattern>
+				<unitPattern count="many" draft="contributed">%s га</unitPattern>
+				<unitPattern count="other" draft="contributed">%s га</unitPattern>
 			</unit>
 			<unit type="area-square-foot">
-				<unitPattern count="one" draft="contributed">{0} кв. фут</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кв. фута</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кв. футов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кв. фута</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кв. фут</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кв. фута</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кв. футов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кв. фута</unitPattern>
 			</unit>
 			<unit type="area-square-kilometer">
-				<unitPattern count="one" draft="contributed">{0} км²</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км²</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км²</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км²</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км²</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км²</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км²</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км²</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
-				<unitPattern count="one" draft="contributed">{0} м²</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} м²</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} м²</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} м²</unitPattern>
+				<unitPattern count="one" draft="contributed">%s м²</unitPattern>
+				<unitPattern count="few" draft="contributed">%s м²</unitPattern>
+				<unitPattern count="many" draft="contributed">%s м²</unitPattern>
+				<unitPattern count="other" draft="contributed">%s м²</unitPattern>
 			</unit>
 			<unit type="area-square-mile">
-				<unitPattern count="one" draft="contributed">{0} кв. миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кв. мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кв. миль</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кв. мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кв. миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кв. мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кв. миль</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кв. мили</unitPattern>
 			</unit>
 			<unit type="duration-day">
-				<unitPattern count="one">{0} д.</unitPattern>
-				<unitPattern count="few">{0} д.</unitPattern>
-				<unitPattern count="many">{0} д.</unitPattern>
-				<unitPattern count="other">{0} д.</unitPattern>
+				<unitPattern count="one">%s д.</unitPattern>
+				<unitPattern count="few">%s д.</unitPattern>
+				<unitPattern count="many">%s д.</unitPattern>
+				<unitPattern count="other">%s д.</unitPattern>
 			</unit>
 			<unit type="duration-hour">
-				<unitPattern count="one">{0} ч</unitPattern>
-				<unitPattern count="few">{0} ч</unitPattern>
-				<unitPattern count="many">{0} ч</unitPattern>
-				<unitPattern count="other">{0} ч</unitPattern>
+				<unitPattern count="one">%s ч</unitPattern>
+				<unitPattern count="few">%s ч</unitPattern>
+				<unitPattern count="many">%s ч</unitPattern>
+				<unitPattern count="other">%s ч</unitPattern>
 			</unit>
 			<unit type="duration-millisecond">
-				<unitPattern count="one">{0} мс</unitPattern>
-				<unitPattern count="few">{0} мс</unitPattern>
-				<unitPattern count="many">{0} мс</unitPattern>
-				<unitPattern count="other">{0} мс</unitPattern>
+				<unitPattern count="one">%s мс</unitPattern>
+				<unitPattern count="few">%s мс</unitPattern>
+				<unitPattern count="many">%s мс</unitPattern>
+				<unitPattern count="other">%s мс</unitPattern>
 			</unit>
 			<unit type="duration-minute">
-				<unitPattern count="one">{0} м.</unitPattern>
-				<unitPattern count="few">{0} мин</unitPattern>
-				<unitPattern count="many">{0} мин</unitPattern>
-				<unitPattern count="other">{0} мин</unitPattern>
+				<unitPattern count="one">%s м.</unitPattern>
+				<unitPattern count="few">%s мин</unitPattern>
+				<unitPattern count="many">%s мин</unitPattern>
+				<unitPattern count="other">%s мин</unitPattern>
 			</unit>
 			<unit type="duration-month">
-				<unitPattern count="one">{0} м.</unitPattern>
-				<unitPattern count="few">{0} м.</unitPattern>
-				<unitPattern count="many">{0} м.</unitPattern>
-				<unitPattern count="other">{0} м.</unitPattern>
+				<unitPattern count="one">%s м.</unitPattern>
+				<unitPattern count="few">%s м.</unitPattern>
+				<unitPattern count="many">%s м.</unitPattern>
+				<unitPattern count="other">%s м.</unitPattern>
 			</unit>
 			<unit type="duration-second">
-				<unitPattern count="one">{0} с</unitPattern>
-				<unitPattern count="few">{0} с</unitPattern>
-				<unitPattern count="many">{0} с</unitPattern>
-				<unitPattern count="other">{0} с</unitPattern>
+				<unitPattern count="one">%s с</unitPattern>
+				<unitPattern count="few">%s с</unitPattern>
+				<unitPattern count="many">%s с</unitPattern>
+				<unitPattern count="other">%s с</unitPattern>
 			</unit>
 			<unit type="duration-week">
-				<unitPattern count="one">{0} н.</unitPattern>
-				<unitPattern count="few">{0} н.</unitPattern>
-				<unitPattern count="many">{0} н.</unitPattern>
-				<unitPattern count="other">{0} н.</unitPattern>
+				<unitPattern count="one">%s н.</unitPattern>
+				<unitPattern count="few">%s н.</unitPattern>
+				<unitPattern count="many">%s н.</unitPattern>
+				<unitPattern count="other">%s н.</unitPattern>
 			</unit>
 			<unit type="duration-year">
-				<unitPattern count="one">{0} г.</unitPattern>
-				<unitPattern count="few">{0} л.</unitPattern>
-				<unitPattern count="many">{0} л.</unitPattern>
-				<unitPattern count="other">{0} г.</unitPattern>
+				<unitPattern count="one">%s г.</unitPattern>
+				<unitPattern count="few">%s л.</unitPattern>
+				<unitPattern count="many">%s л.</unitPattern>
+				<unitPattern count="other">%s г.</unitPattern>
 			</unit>
 			<unit type="length-centimeter">
-				<unitPattern count="one" draft="contributed">{0} см</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} см</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} см</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} см</unitPattern>
+				<unitPattern count="one" draft="contributed">%s см</unitPattern>
+				<unitPattern count="few" draft="contributed">%s см</unitPattern>
+				<unitPattern count="many" draft="contributed">%s см</unitPattern>
+				<unitPattern count="other" draft="contributed">%s см</unitPattern>
 			</unit>
 			<unit type="length-foot">
-				<unitPattern count="one" draft="contributed">{0} фут</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} фута</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} футов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} фута</unitPattern>
+				<unitPattern count="one" draft="contributed">%s фут</unitPattern>
+				<unitPattern count="few" draft="contributed">%s фута</unitPattern>
+				<unitPattern count="many" draft="contributed">%s футов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s фута</unitPattern>
 			</unit>
 			<unit type="length-inch">
-				<unitPattern count="one" draft="contributed">{0} дюйм</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} дюйма</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} дюймов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} дюйма</unitPattern>
+				<unitPattern count="one" draft="contributed">%s дюйм</unitPattern>
+				<unitPattern count="few" draft="contributed">%s дюйма</unitPattern>
+				<unitPattern count="many" draft="contributed">%s дюймов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s дюйма</unitPattern>
 			</unit>
 			<unit type="length-kilometer">
-				<unitPattern count="one" draft="contributed">{0} км</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км</unitPattern>
 			</unit>
 			<unit type="length-light-year">
-				<unitPattern count="one" draft="contributed">{0} св. г.</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} св. л.</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} св. л.</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} св. г.</unitPattern>
+				<unitPattern count="one" draft="contributed">%s св. г.</unitPattern>
+				<unitPattern count="few" draft="contributed">%s св. л.</unitPattern>
+				<unitPattern count="many" draft="contributed">%s св. л.</unitPattern>
+				<unitPattern count="other" draft="contributed">%s св. г.</unitPattern>
 			</unit>
 			<unit type="length-meter">
-				<unitPattern count="one" draft="contributed">{0} м</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} м</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} м</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} м</unitPattern>
+				<unitPattern count="one" draft="contributed">%s м</unitPattern>
+				<unitPattern count="few" draft="contributed">%s м</unitPattern>
+				<unitPattern count="many" draft="contributed">%s м</unitPattern>
+				<unitPattern count="other" draft="contributed">%s м</unitPattern>
 			</unit>
 			<unit type="length-mile">
-				<unitPattern count="one" draft="contributed">{0} миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} миль</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миль</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s миль</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миль</unitPattern>
+				<unitPattern count="other" draft="contributed">%s мили</unitPattern>
 			</unit>
 			<unit type="length-millimeter">
-				<unitPattern count="one" draft="contributed">{0} мм</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мм</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} мм</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} мм</unitPattern>
+				<unitPattern count="one" draft="contributed">%s мм</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мм</unitPattern>
+				<unitPattern count="many" draft="contributed">%s мм</unitPattern>
+				<unitPattern count="other" draft="contributed">%s мм</unitPattern>
 			</unit>
 			<unit type="length-picometer">
-				<unitPattern count="one" draft="contributed">{0} pm</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} pm</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} pm</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} pm</unitPattern>
+				<unitPattern count="one" draft="contributed">%s pm</unitPattern>
+				<unitPattern count="few" draft="contributed">%s pm</unitPattern>
+				<unitPattern count="many" draft="contributed">%s pm</unitPattern>
+				<unitPattern count="other" draft="contributed">%s pm</unitPattern>
 			</unit>
 			<unit type="length-yard">
-				<unitPattern count="one" draft="contributed">{0} ярд</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} ярда</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} ярдов</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} ярда</unitPattern>
+				<unitPattern count="one" draft="contributed">%s ярд</unitPattern>
+				<unitPattern count="few" draft="contributed">%s ярда</unitPattern>
+				<unitPattern count="many" draft="contributed">%s ярдов</unitPattern>
+				<unitPattern count="other" draft="contributed">%s ярда</unitPattern>
 			</unit>
 			<unit type="mass-gram">
-				<unitPattern count="one" draft="contributed">{0} гр</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} гр</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} гр</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} гр</unitPattern>
+				<unitPattern count="one" draft="contributed">%s гр</unitPattern>
+				<unitPattern count="few" draft="contributed">%s гр</unitPattern>
+				<unitPattern count="many" draft="contributed">%s гр</unitPattern>
+				<unitPattern count="other" draft="contributed">%s гр</unitPattern>
 			</unit>
 			<unit type="mass-kilogram">
-				<unitPattern count="one" draft="contributed">{0} кг</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кг</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кг</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кг</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кг</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кг</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кг</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кг</unitPattern>
 			</unit>
 			<unit type="mass-ounce">
-				<unitPattern count="one" draft="contributed">{0} oz</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} oz</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} oz</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} oz</unitPattern>
+				<unitPattern count="one" draft="contributed">%s oz</unitPattern>
+				<unitPattern count="few" draft="contributed">%s oz</unitPattern>
+				<unitPattern count="many" draft="contributed">%s oz</unitPattern>
+				<unitPattern count="other" draft="contributed">%s oz</unitPattern>
 			</unit>
 			<unit type="mass-pound">
-				<unitPattern count="one" draft="contributed">{0} lb</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} lb</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} lb</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} lb</unitPattern>
+				<unitPattern count="one" draft="contributed">%s lb</unitPattern>
+				<unitPattern count="few" draft="contributed">%s lb</unitPattern>
+				<unitPattern count="many" draft="contributed">%s lb</unitPattern>
+				<unitPattern count="other" draft="contributed">%s lb</unitPattern>
 			</unit>
 			<unit type="power-horsepower">
-				<unitPattern count="one" draft="contributed">{0} л.с.</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} л.с.</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} л.с.</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} л.с.</unitPattern>
+				<unitPattern count="one" draft="contributed">%s л.с.</unitPattern>
+				<unitPattern count="few" draft="contributed">%s л.с.</unitPattern>
+				<unitPattern count="many" draft="contributed">%s л.с.</unitPattern>
+				<unitPattern count="other" draft="contributed">%s л.с.</unitPattern>
 			</unit>
 			<unit type="power-kilowatt">
-				<unitPattern count="one" draft="contributed">{0} кВт</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} кВт</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кВт</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кВт</unitPattern>
+				<unitPattern count="one" draft="contributed">%s кВт</unitPattern>
+				<unitPattern count="few" draft="contributed">%s кВт</unitPattern>
+				<unitPattern count="many" draft="contributed">%s кВт</unitPattern>
+				<unitPattern count="other" draft="contributed">%s кВт</unitPattern>
 			</unit>
 			<unit type="power-watt">
-				<unitPattern count="one" draft="contributed">{0} Вт</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} Вт</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} Вт</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} Вт</unitPattern>
+				<unitPattern count="one" draft="contributed">%s Вт</unitPattern>
+				<unitPattern count="few" draft="contributed">%s Вт</unitPattern>
+				<unitPattern count="many" draft="contributed">%s Вт</unitPattern>
+				<unitPattern count="other" draft="contributed">%s Вт</unitPattern>
 			</unit>
 			<unit type="pressure-hectopascal">
-				<unitPattern count="one" draft="contributed">{0} гПа</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} гПа</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} гПа</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} гПа</unitPattern>
+				<unitPattern count="one" draft="contributed">%s гПа</unitPattern>
+				<unitPattern count="few" draft="contributed">%s гПа</unitPattern>
+				<unitPattern count="many" draft="contributed">%s гПа</unitPattern>
+				<unitPattern count="other" draft="contributed">%s гПа</unitPattern>
 			</unit>
 			<unit type="pressure-inch-hg">
-				<unitPattern count="one">{0} inHg</unitPattern>
-				<unitPattern count="few">{0} inHg</unitPattern>
-				<unitPattern count="many">{0} inHg</unitPattern>
-				<unitPattern count="other">{0} inHg</unitPattern>
+				<unitPattern count="one">%s inHg</unitPattern>
+				<unitPattern count="few">%s inHg</unitPattern>
+				<unitPattern count="many">%s inHg</unitPattern>
+				<unitPattern count="other">%s inHg</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
-				<unitPattern count="one" draft="contributed">{0} мбар</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} мбар</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} мбар</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} мбар</unitPattern>
+				<unitPattern count="one" draft="contributed">%s мбар</unitPattern>
+				<unitPattern count="few" draft="contributed">%s мбар</unitPattern>
+				<unitPattern count="many" draft="contributed">%s мбар</unitPattern>
+				<unitPattern count="other" draft="contributed">%s мбар</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
-				<unitPattern count="one" draft="contributed">{0} км/ч</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км/ч</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км/ч</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км/ч</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км/ч</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км/ч</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км/ч</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км/ч</unitPattern>
 			</unit>
 			<unit type="speed-meter-per-second">
-				<unitPattern count="one" draft="contributed">{0} м/с</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} м/с</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} м/с</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} м/с</unitPattern>
+				<unitPattern count="one" draft="contributed">%s м/с</unitPattern>
+				<unitPattern count="few" draft="contributed">%s м/с</unitPattern>
+				<unitPattern count="many" draft="contributed">%s м/с</unitPattern>
+				<unitPattern count="other" draft="contributed">%s м/с</unitPattern>
 			</unit>
 			<unit type="speed-mile-per-hour">
-				<unitPattern count="one" draft="contributed">{0} миль/ч</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} миль/ч</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} миль/ч</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} миль/ч</unitPattern>
+				<unitPattern count="one" draft="contributed">%s миль/ч</unitPattern>
+				<unitPattern count="few" draft="contributed">%s миль/ч</unitPattern>
+				<unitPattern count="many" draft="contributed">%s миль/ч</unitPattern>
+				<unitPattern count="other" draft="contributed">%s миль/ч</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
-				<unitPattern count="one">{0} °</unitPattern>
-				<unitPattern count="few">{0} °</unitPattern>
-				<unitPattern count="many">{0} °</unitPattern>
-				<unitPattern count="other">{0} °</unitPattern>
+				<unitPattern count="one">%s °</unitPattern>
+				<unitPattern count="few">%s °</unitPattern>
+				<unitPattern count="many">%s °</unitPattern>
+				<unitPattern count="other">%s °</unitPattern>
 			</unit>
 			<unit type="temperature-fahrenheit">
-				<unitPattern count="one" draft="contributed">{0}°F</unitPattern>
-				<unitPattern count="few" draft="contributed">{0}°F</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}°F</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}°F</unitPattern>
+				<unitPattern count="one" draft="contributed">%s°F</unitPattern>
+				<unitPattern count="few" draft="contributed">%s°F</unitPattern>
+				<unitPattern count="many" draft="contributed">%s°F</unitPattern>
+				<unitPattern count="other" draft="contributed">%s°F</unitPattern>
 			</unit>
 			<unit type="volume-cubic-kilometer">
-				<unitPattern count="one" draft="contributed">{0} км³</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} км³</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} км³</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} км³</unitPattern>
+				<unitPattern count="one" draft="contributed">%s км³</unitPattern>
+				<unitPattern count="few" draft="contributed">%s км³</unitPattern>
+				<unitPattern count="many" draft="contributed">%s км³</unitPattern>
+				<unitPattern count="other" draft="contributed">%s км³</unitPattern>
 			</unit>
 			<unit type="volume-cubic-mile">
-				<unitPattern count="one" draft="contributed">{0} куб. миля</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} куб. мили</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} куб. мили</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} куб. мили</unitPattern>
+				<unitPattern count="one" draft="contributed">%s куб. миля</unitPattern>
+				<unitPattern count="few" draft="contributed">%s куб. мили</unitPattern>
+				<unitPattern count="many" draft="contributed">%s куб. мили</unitPattern>
+				<unitPattern count="other" draft="contributed">%s куб. мили</unitPattern>
 			</unit>
 			<unit type="volume-liter">
-				<unitPattern count="one" draft="contributed">{0} л</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} л</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} л</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} л</unitPattern>
+				<unitPattern count="one" draft="contributed">%s л</unitPattern>
+				<unitPattern count="few" draft="contributed">%s л</unitPattern>
+				<unitPattern count="many" draft="contributed">%s л</unitPattern>
+				<unitPattern count="other" draft="contributed">%s л</unitPattern>
 			</unit>
 		</unitLength>
 		<durationUnit type="hm">
@@ -7606,28 +7609,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</units>
 	<listPatterns>
 		<listPattern>
-			<listPatternPart type="start">{0}, {1}</listPatternPart>
-			<listPatternPart type="middle">{0}, {1}</listPatternPart>
-			<listPatternPart type="end">{0} и {1}</listPatternPart>
-			<listPatternPart type="2">{0} и {1}</listPatternPart>
+			<listPatternPart type="start">%s, {1}</listPatternPart>
+			<listPatternPart type="middle">%s, {1}</listPatternPart>
+			<listPatternPart type="end">%s и {1}</listPatternPart>
+			<listPatternPart type="2">%s и {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="unit">
-			<listPatternPart type="start">{0}, {1}</listPatternPart>
-			<listPatternPart type="middle">{0}, {1}</listPatternPart>
-			<listPatternPart type="end">{0} и {1}</listPatternPart>
-			<listPatternPart type="2">{0} {1}</listPatternPart>
+			<listPatternPart type="start">%s, {1}</listPatternPart>
+			<listPatternPart type="middle">%s, {1}</listPatternPart>
+			<listPatternPart type="end">%s и {1}</listPatternPart>
+			<listPatternPart type="2">%s {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="unit-narrow">
-			<listPatternPart type="start">{0} {1}</listPatternPart>
-			<listPatternPart type="middle">{0} {1}</listPatternPart>
-			<listPatternPart type="end">{0} {1}</listPatternPart>
-			<listPatternPart type="2">{0} {1}</listPatternPart>
+			<listPatternPart type="start">%s {1}</listPatternPart>
+			<listPatternPart type="middle">%s {1}</listPatternPart>
+			<listPatternPart type="end">%s {1}</listPatternPart>
+			<listPatternPart type="2">%s {1}</listPatternPart>
 		</listPattern>
 		<listPattern type="unit-short">
-			<listPatternPart type="start">{0}, {1}</listPatternPart>
-			<listPatternPart type="middle">{0}, {1}</listPatternPart>
-			<listPatternPart type="end">{0}, {1}</listPatternPart>
-			<listPatternPart type="2">{0}, {1}</listPatternPart>
+			<listPatternPart type="start">%s, {1}</listPatternPart>
+			<listPatternPart type="middle">%s, {1}</listPatternPart>
+			<listPatternPart type="end">%s, {1}</listPatternPart>
+			<listPatternPart type="2">%s, {1}</listPatternPart>
 		</listPattern>
 	</listPatterns>
 	<posix>

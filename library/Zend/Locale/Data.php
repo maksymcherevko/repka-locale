@@ -74,6 +74,12 @@ class Zend_Locale_Data
      */
     private static $_cacheDisabled = false;
 
+    private static $_formatTypes = array(
+        "%y" => "year",
+        "%m" => "month",
+        "%d" => "day"
+    );
+
     /**
      * Read the content from locale
      *
@@ -241,6 +247,14 @@ class Zend_Locale_Data
         // 3. -> zh
         // 4. -> root
         if (($locale != 'root') && ($result)) {
+            // Search for parent locale
+            if (false !== strpos($locale, '_')) {
+                $parentLocale = self::getContent($locale, 'parentlocale');
+                if ($parentLocale) {
+                    $temp = self::_getFile($parentLocale, $path, $attribute, $value, $temp);
+                }
+            }
+
             $locale = substr($locale, 0, -strlen(strrchr($locale, '_')));
             if (!empty($locale)) {
                 $temp = self::_getFile($locale, $path, $attribute, $value, $temp);
@@ -1204,6 +1218,13 @@ class Zend_Locale_Data
                 // $temp = self::_getFile($locale, '/ldml/dates/calendars/calendar[@type=\'' . $value[0] . '\']/fields/field/relative[@type=\'' . $value[1] . '\']', '', $value[1]);
                 break;
 
+            case 'relativetime':
+                if (!is_array($value) || count($value) < 3) {
+                    $value = array('week', 'future', 'many');
+                }
+                $temp = self::_getFile($locale, "/ldml/dates/fields/field[@type='{$value[0]}']/relativeTime[@type='{$value[1]}']/relativeTimePattern[@count='{$value[2]}']", "", "default");
+                break;
+
             case 'defaultnumberingsystem':
                 $temp = self::_getFile($locale, '/ldml/numbers/defaultNumberingSystem', '', 'default');
                 break;
@@ -1474,6 +1495,13 @@ class Zend_Locale_Data
                 $temp = self::_getFile($locale, '/ldml/units/unitLength/unit[@type=\'' . $value[0] . '\']/unitPattern[@count=\'' . $value[1] . '\']', '');
                 break;
 
+            case 'parentlocale':
+                if (false === $value) {
+                    $value = $locale;
+                }
+                $temp = self::_getFile('supplementalData', "/supplementalData/parentLocales/parentLocale[contains(@locales, '" . $value . "')]", 'parent', 'parent');
+                break;
+
             default :
                 // require_once 'Zend/Locale/Exception.php';
                 throw new Zend_Locale_Exception("Unknown detail ($path) for parsing locale data.");
@@ -1599,4 +1627,64 @@ class Zend_Locale_Data
             )
         );
     }
+
+    public static function format($date) {
+
+        $format = array();
+        $diff = date_diff(date_create(), date_create($date));
+
+        end(self::$_formatTypes);
+        $lastKey = key(self::$_formatTypes);
+
+        foreach (self::$_formatTypes as $key => $type) {
+            if (!empty($count = $diff->format($key))) {
+                $last = ($key === $lastKey);
+                $format[] = self::getFormatByType($type, $count, $last);
+            }
+        }
+
+        if (empty($format)) {
+            $format[] = self::getFormatByType('recently', 0);
+        }
+
+        $result = implode(' ', $format);
+
+        return $result;
+    }
+
+    private static function getFormatByType($type, $count, $last = false) {
+
+        $locale = new Zend_Locale();
+        $attrCountName = self::getCountName($count);
+
+        if (!$last) {
+            $result = self::getContent($locale, 'unit', array("duration-{$type}", $attrCountName));
+        } else {
+            $result = self::getContent($locale, 'relativetime', array($type, 'past', $attrCountName));
+        }
+        $result = sprintf($result, $count);
+
+        return $result;
+    }
+
+    private static function getCountName($value) {
+
+        $lastNumber = (int)substr($value, -1);
+        $lastTwoNumbers = (int)substr($value, -2);
+
+        if (in_array($lastTwoNumbers, range(10, 20))) {
+            $result = "many";
+        } elseif ($lastNumber < 2) {
+            $result = "one";
+        } elseif (in_array($lastNumber, range(2, 4))) {
+            $result = "few";
+        } elseif ($lastNumber >= 5) {
+            $result = "many";
+        } else {
+            $result = "other";
+        }
+
+        return $result;
+    }
+    
 }

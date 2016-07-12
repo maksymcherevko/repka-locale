@@ -1,5 +1,5 @@
 {
-	"name": "zf1/zend-locale",
+	"name": "maksymcherevko/repka-locale",
 	"description": "Zend Framework 1 Locale package",
 	"keywords": [
 		"framework",
@@ -7,8 +7,6 @@
 		"zend",
 		"locale"
 	],
-	"homepage": "http://framework.zend.com/",
-	"license": "BSD-3-Clause",
 	"require": {
 		"php": ">=5.2.11",
 		"zf1/zend-exception": "self.version",
@@ -17,10 +15,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"Zend_Locale": "library/"
+			"Repka_Locale": "library/"
 		}
-	},
-	"suggest": {
-		"zf1/zend-registry": "Used in special situations or with special adapters"
 	}
 }
