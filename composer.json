@@ -1,9 +1,7 @@
 {
 	"name": "maksymcherevko/repka-locale",
-	"description": "Zend Framework 1 Locale package",
+	"version": "1.0.0",
 	"require": {
-		"minimum-stability": "dev",
-		"prefer-stable" : true,
 		"php": ">=5.2.11",
 		"zf1/zend-exception": "self.version",
 		"zf1/zend-xml": "self.version",
