@@ -2,8 +2,6 @@
 	"name": "maksymcherevko/repka-locale",
 	"version": "1.2.0",
 	"require": {
-		"minimum-stability": "dev",
-		"prefer-stable" : true,
 		"php": ">=5.2.11",
 		"zf1/zend-exception": "self.version",
 		"zf1/zend-xml": "self.version",
