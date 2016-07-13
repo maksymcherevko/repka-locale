@@ -3,9 +3,9 @@
 	"version": "1.2.0",
 	"require": {
 		"php": ">=5.2.11",
-		"zf1/zend-exception": "self.version",
-		"zf1/zend-xml": "self.version",
-		"zf1/zend-cache": "self.version"
+		"zf1/zend-exception": "*",
+		"zf1/zend-xml": "*",
+		"zf1/zend-cache": "*"
 	},
 	"autoload": {
 		"psr-0": {
