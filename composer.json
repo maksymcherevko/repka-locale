@@ -1,6 +1,7 @@
 {
 	"name": "maksymcherevko/repka-locale",
 	"version": "1.2.0",
+	"type": "library",
 	"require": {
 		"php": ">=5.2.11",
 		"zf1/zend-exception": "*",
@@ -11,5 +12,8 @@
 		"psr-0": {
 			"Repka_Locale": "library/"
 		}
-	}
+	},
+	"include-path": [
+		"library/"
+	]
 }
