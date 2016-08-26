@@ -10,7 +10,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"Repka\\Test": "library/"
+			"Repka\\Test\\": "library/"
 	        }
 	},
 	"include-path": [
