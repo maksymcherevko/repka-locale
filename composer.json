@@ -9,9 +9,9 @@
 		"zf1/zend-cache": "*"
 	},
 	"autoload": {
-		"psr-0": {
-			"Repka_Locale": "library/"
-		}
+		"psr-4": {
+	            "Repka\\Locale\\": "library/"
+	        }
 	},
 	"include-path": [
 		"library/"
